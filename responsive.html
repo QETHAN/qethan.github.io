@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name=”viewport” content=”width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1″>
   <title>阿贾克斯</title>
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
   <style>
     * {
       margin: 0;
       padding: 0;
       -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
       transition: all .5s ease;
     }
     *,
@@ -17,6 +19,9 @@
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
+    }
+    img {
+      vertical-align: middle;
     }
     .pull-left {
       float: left;
@@ -43,7 +48,6 @@
       margin: 0 auto;
       padding: 0 15px;
     }
-
     .row {
       margin: 0 -15px;
     }
@@ -59,14 +63,28 @@
     .pr-15 {
       padding-right: 15px;
     }
-    .top {
+    .header {
       position: relative;
       height: 40px;
+      line-height: 40px;
       background-color: #00AEE8;
     }
-    .top-content {
+    .header-content {
       height: 100%;
       background-color: #B94A48;
+    }
+    .header-content .icon-menu {
+      display: none;
+      margin-left: 15px;
+    }
+    .header-content .logo {
+      position: relative;
+      top: -3px;
+    }
+    .header-content .title {
+      position: relative;
+      color: #ffffff;
+      font-size: 12px;
     }
     .banner {
       height: 100px;
@@ -120,10 +138,7 @@
         width: 960px;
       }
     }
-    @media screen and (max-width: 768px) {
-      .container {
-        /*width: 768px;*/
-      }
+    @media screen and (max-width: 959px) {
       .main {
         position: relative;
         width: 80%;
@@ -164,47 +179,74 @@
         float: right;
       }
     }
+
+    @media screen and (max-width: 768px) {
+      .top .icon-menu {
+        display: inline-block;
+      }
+      .main,
+      .carousel {
+        width:100%;
+      }
+      .main {
+        margin-left: 0;
+      }
+      .nav,
+      .banner,
+      .ajax-ads {
+        display: none;
+      }
+      .next,
+      .news,
+      .video,
+      .score,
+      .weibo {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="top">
-    <div class="container top-content">
+<div class="container header">
+  <div class="row header-content">
+    <i class="fa fa-reorder icon-menu"></i>
+    <img class="logo" src="images/logo_ajax.png" width="87" height="26" alt="阿贾克斯中文站">
+    <strong class="title">中文官方网站</strong>
+  </div>
+</div>
+
+<div class="container">
+  <div class="clearfix">
+    <div class="banner">
+
+    </div>
+    <div class="nav">
+    </div>
+  </div>
+
+  <div class="main clearfix">
+    <div class="carousel pull-left">
+
+    </div>
+    <div class="next pull-left"></div>
+
+
+    <div class="news  pull-left">
+
+    </div>
+    <div class="video  pull-left">
+
+    </div>
+    <div class="score  pull-left">
+
+    </div>
+    <div class="ajax-ads pull-left">
+
+    </div>
+    <div class="weibo pull-left">
 
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="banner">
-
-      </div>
-      <div class="nav">
-
-      </div>
-    </div>
-
-    <div class="row main clearfix">
-      <div class="carousel pull-left">
-
-      </div>
-      <div class="next pull-left"></div>
-
-
-      <div class="news  pull-left">
-
-      </div>
-      <div class="video  pull-left">
-
-      </div>
-      <div class="score  pull-left">
-
-      </div>
-      <div class="ajax-ads pull-left">
-
-      </div>
-      <div class="weibo pull-left">
-
-      </div>
-    </div>
-  </div>
+</div>
 </body>
 </html>
