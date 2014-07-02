@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <title>阿贾克斯</title>
+  <link rel="stylesheet" href="styles/1.css"/>
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
+  <style>
+
+    p {
+      color: #fff;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .banner {
+      line-height: 100px;
+    }
+    .banner p {
+      color: #888;
+    }
+
+    .nav {
+      line-height: 40px;
+      color: #fff;
+    }
+
+    .carousel,
+    .next {
+      line-height: 300px;
+    }
+
+    .news,
+    .video,
+    .score,
+    .ajax-ads,
+    .weibo {
+      line-height: 416px;
+    }
+.side-nav p {
+  margin-top: 45%;
+}
+  </style>
+</head>
+<body>
+
+
+<!-- 隐藏侧边栏 start -->
+<aside class="nav side-nav" id="js-sideMenu">
+	<p>侧边栏菜单</p>
+</aside>
+<!-- 隐藏侧边栏 end -->
+
+<div class="wrapper" id="js-main">
+  <div class="header">
+    <div class="container header-content">
+      <i class="fa fa-reorder icon-menu" id="js-toggle"></i>
+
+      <img class="logo" src="images/ajax/logo_ajax.png" width="87" height="26" alt="阿贾克斯中文站">
+      <strong class="title">中文官方网站</strong>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row clearfix">
+      <div class="banner">
+        <p>Banner</p>
+      </div>
+      <div class="nav" id="menu">
+        <p>导航菜单</p>
+      </div>
+
+    </div>
+
+    <div class="row main clearfix">
+
+      <div class="carousel pull-left">
+        <p>轮播图</p>
+      </div>
+      <div class="next">
+        <p>下一场比赛预告</p>
+      </div>
+
+
+      <div class="news  pull-left">
+        <p>新闻</p>
+      </div>
+      <div class="video  pull-left">
+        <p>视频</p>
+      </div>
+      <div class="score  pull-left">
+        <p>积分榜</p>
+      </div>
+      <div class="ajax-ads pull-left">
+        <p>广告</p>
+      </div>
+      <div class="weibo pull-left">
+        <p>微博秀</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script>
+  (function($) {
+    $.fn.clickToggle = function(func1, func2) {
+      var funcs = [func1, func2];
+      this.data('toggleclicked', 0);
+      this.click(function() {
+        var data = $(this).data();
+        var tc = data.toggleclicked;
+        $.proxy(funcs[tc], this)();
+        data.toggleclicked = (tc + 1) % 2;
+      });
+      return this;
+    };
+  }(jQuery));
+
+  $(function () {
+    var $main = $('#js-main');
+    $('#js-toggle').clickToggle(function () {
+      $main.addClass('menu-out');
+    }, function() {
+      $main.removeClass('menu-out');
+    });
+
+    $(window ).resize(function() {
+      $main.removeClass('menu-out');
+    });
+  });
+
+</script>
+</html>
