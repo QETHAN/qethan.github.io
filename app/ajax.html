@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="ie6"> <![endif]-->
+<!--[if IE 7]>         <html class="ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html>         <!--<![endif]-->
 <head lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
@@ -17,21 +20,138 @@
 
 <!-- 隐藏侧边栏 start -->
 <aside class="nav side-nav" id="js-sideMenu">
-  <p>侧边栏菜单</p>
+  <ul class="main-nav clearfix">
+    <li class="main-nav-item first">
+      <a href="#">首页</a>
+    </li>
+    <li class="main-nav-item">
+      <a href="#">新闻</a>
+      <ul class="sub-nav">
+        <li class="sub-nav-item">
+          <a href="#">新闻列表</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">阿贾克斯电子杂志</a>
+        </li>
+      </ul>
+    </li>
+    <li class="main-nav-item">
+      <a href="#">TV</a>
+    </li>
+    <li class="main-nav-item">
+      <a href="#">一线队</a>
+      <ul class="sub-nav">
+        <li class="sub-nav-item">
+          <a href="#">一线队名单</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">教练组</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">战报</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">赛程</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">积分榜</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">伤病名单</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">训练日程</a>
+        </li>
+      </ul>
+    </li>
+    <li class="main-nav-item">
+      <a href="#">俱乐部</a>
+      <ul class="sub-nav">
+        <li class="sub-nav-item">
+          <a href="#">俱乐部历史</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">荣誉室</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">董事会</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">公司高层</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">Ajax Life</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">联系方式</a>
+        </li>
+      </ul>
+    </li>
+    <li class="main-nav-item">
+      <a href="#">其余球队</a>
+      <ul class="sub-nav">
+        <li class="sub-nav-item">
+          <a href="#">预备队</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">女足</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">各级梯队</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">未来球场</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">训练营</a>
+        </li>
+      </ul>
+    </li>
+    <li class="main-nav-item">
+      <a href="#">球场</a>
+      <ul class="sub-nav">
+        <li class="sub-nav-item">
+          <a href="#">浏览参观</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">官方商店</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">纵览球场</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">官方商店</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">无障碍设施</a>
+        </li>
+        <li class="sub-nav-item">
+          <a href="#">路线</a>
+        </li>
+      </ul>
+    </li>
+    <li class="main-nav-item">
+      <a href="#">票务信息</a>
+    </li>
+    <li class="main-nav-item last">
+      <a href="#">官方商店</a>
+    </li>
+  </ul>
 </aside>
 <!-- 隐藏侧边栏 end -->
 
 <div class="wrapper" id="js-main">
 <div class="header">
-  <div class="container header-content">
-    <i class="fa fa-reorder icon-menu" id="js-toggle"></i>
-
+  <div class="container header-content clearfix">
+    <span class="icon-menu pull-left" id="js-toggle">
+      <i class="fa fa-reorder"></i>
+    </span>
     <img class="logo" src="images/ajax/logo_ajax.png" width="87" height="26" alt="阿贾克斯中文站">
     <strong class="title">中文官方网站</strong>
   </div>
 </div>
-<div class="container">
-<div class="row clearfix">
+<div class="container clearfix">
+<div class="row">
   <div class="banner"></div>
   <div class="nav" id="menu">
     <ul class="main-nav clearfix">
@@ -155,7 +275,7 @@
 
 </div>
 
-<div class="row main clearfix">
+<!--<div class="row main clearfix">-->
 
 <div class="carousel pull-left">
   <div class="carousel-content pull-left">
@@ -180,78 +300,98 @@
   <div class="carousel-links pull-left">
     <ul>
       <li id="js-link-first" class="active">
-        <a href="#">Hello</a>
+        <a href="#">加齐和费尔赫弗自豪首秀</a>
       </li>
       <li class="">
-        <a href="#">Hello</a>
+        <a href="#">德波尔高兴阿贾克斯热身赛获大胜</a>
       </li>
       <li class="">
-        <a href="#">Hello</a>
+        <a href="#">安德森转会阿尔克马尔</a>
       </li>
       <li class="">
-        <a href="#">Hello</a>
+        <a href="#">阿贾克斯续约范德哈特</a>
       </li>
       <li class="">
-        <a href="#">Hello</a>
+        <a href="#">德波尔谈新赛季备战</a>
       </li>
     </ul>
   </div>
 </div>
-<div class="next">
-  <h2 class="title">下一场比赛</h2>
 
-  <div class="next-vs clearfix">
-    <div class="right pull-right">
-      <img src="../images/ajax/report_right.png" width="64" height="34">
-
-      <p class="text-title">距离比赛开始还有</p>
-
-      <div class="counterdown clearfix">
-        <div class="counterdown-item day mr-4">
-          <div id="js-day">000</div>
-          <div class="time-desc">天</div>
-        </div>
-        <div class="counterdown-item mr-4">
-          <div id="js-hour">00</div>
-          <div class="time-desc">时</div>
-        </div>
-        <div class="counterdown-item mr-4">
-          <div id="js-minute">00</div>
-          <div class="time-desc">分</div>
-        </div>
-        <div class="counterdown-item">
-          <div id="js-second">00</div>
-          <div class="time-desc">秒</div>
-        </div>
-      </div>
-
-    </div>
-    <div class="left pull-left">
-      <img class="img-vs1" src="../images/ajax/vs1.png" width="65" height="65">
-      <span class="text-vs">VS</span>
-      <img class="img-vs2" src="../images/ajax/vs2.png" width="57" height="56">
-
-      <p class="desc">
-        <span>2014-8-3&nbsp;&nbsp;24:00</span>&nbsp;
-        克鲁伊夫盾呲我了&nbsp;&nbsp;VS &nbsp;&nbsp;阿贾克斯
-      </p>
-    </div>
-  </div>
-  <div class="text-center">
-    <a class="link-previous" href="#">
-      上一场战报
-    </a>
-  </div>
-
-
-  <p class="ajax-weibo">
-    <a href="#">阿贾克斯中文官网微博</a>
-  </p>
-
-  <p class="ajax-schedule">
-    <a href="#">阿贾克斯赛程</a>
-  </p>
+<div class="slider" style="height: 300px;">
+  <ul>
+    <li style="background-image: url(images/ajax/1.jpg)">
+    </li>
+    <li style="background-image: url(images/ajax/2.jpg)">
+    </li>
+    <li style="background-image: url(images/ajax/1.jpg)">
+    </li>
+    <li style="background-image: url(images/ajax/2.jpg)">
+    </li>
+    <li style="background-image: url(images/ajax/1.jpg)">
+    </li>
+  </ul>
 </div>
+
+<div class="next">
+  <div class="next-inner">
+
+    <h2 class="title">下一场比赛</h2>
+
+    <div class="next-vs clearfix">
+      <div class="right pull-right">
+        <img src="../images/ajax/report_right.png" width="64" height="34">
+
+        <p class="text-title">距离比赛开始还有</p>
+
+        <div class="counterdown clearfix">
+          <div class="counterdown-item day mr-4">
+            <div id="js-day">000</div>
+            <div class="time-desc">天</div>
+          </div>
+          <div class="counterdown-item mr-4">
+            <div id="js-hour">00</div>
+            <div class="time-desc">时</div>
+          </div>
+          <div class="counterdown-item mr-4">
+            <div id="js-minute">00</div>
+            <div class="time-desc">分</div>
+          </div>
+          <div class="counterdown-item">
+            <div id="js-second">00</div>
+            <div class="time-desc">秒</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="left pull-left">
+        <img class="img-vs1" src="../images/ajax/vs1.png" width="65" height="65">
+        <span class="text-vs">VS</span>
+        <img class="img-vs2" src="../images/ajax/vs2.png" width="57" height="56">
+
+        <p class="desc">
+          <span>2014-8-3&nbsp;&nbsp;24:00</span>&nbsp;
+          克鲁伊夫盾沃兹勒&nbsp;&nbsp;VS &nbsp;&nbsp;阿贾克斯
+        </p>
+      </div>
+    </div>
+    <div class="text-center">
+      <a class="link-previous" href="#">
+        上一场战报
+      </a>
+    </div>
+
+
+    <p class="ajax-weibo">
+      <a href="#">阿贾克斯中文官网微博</a>
+    </p>
+
+    <p class="ajax-schedule">
+      <a href="#">阿贾克斯赛程</a>
+    </p>
+  </div>
+</div>
+
 
 <div class="card news pull-left">
   <div class="card-inner">
@@ -336,22 +476,21 @@
       </h2>
 
       <div class="imgs">
-        <img class="active js-video-img" src="">
-        <img class="js-video-img" src="">
-        <img class="js-video-img"
-                                                                                                  src="">
+        <img class="active js-video-img" src="images/ajax/1.png">
+        <img class="js-video-img" src="images/ajax/2.png">
+        <img class="js-video-img" src="images/ajax/3.png">
       </div>
     </div>
   </div>
 </div>
 
-  <div class="card score pull-left">
-    <div class="card-inner">
-      <div class="header clearfix">
-        <h3 class="title">积分榜</h3>
-        <a class="more" href="#">更多>></a>
-      </div>
-      <div class="content">
+<div class="card score pull-left">
+  <div class="card-inner">
+    <div class="header clearfix">
+      <h3 class="title">积分榜</h3>
+      <a class="more" href="#">更多>></a>
+    </div>
+    <div class="content">
       <table>
         <thead>
         <tr class="tb-header">
@@ -451,28 +590,31 @@
         </tbody>
       </table>
     </div>
-    </div>
+  </div>
+</div>
+
+<div class="card ajax-ads pull-left">
+  <div class="card-inner">
+
   </div>
 
-  <div class="card ajax-ads pull-left">
-    <div class="card-inner">
-
-    </div>
-
-  </div>
-  <div class="card weibo pull-left">
-    <div class="card-inner">
-      <iframe width="100%" height="460" class="share_self" frameborder="0" scrolling="no"
-              src="http://widget.weibo.com/weiboshow/index.php?language=&width=306&height=460&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=0&isWeibo=1&isFans=0&uid=1732678741&verifier=0af9e527&colors=6a040e,ffffff,666666,0082cb,ecfbfd&dpc=1"></iframe>
-    </div>
+</div>
+<div class="card weibo pull-left">
+  <div class="card-inner">
+    <iframe width="100%" height="460" class="share_self" frameborder="0" scrolling="no"
+            src="http://widget.weibo.com/weiboshow/index.php?language=&width=306&height=460&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=0&isWeibo=1&isFans=0&uid=1732678741&verifier=0af9e527&colors=6a040e,ffffff,666666,0082cb,ecfbfd&dpc=1"></iframe>
   </div>
 </div>
 </div>
 </div>
+<!--</div>-->
 
 </div>
 </body>
 <script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="scripts/jquery.event.swipe.js"></script>
+<script src="scripts/unslider.min.js"></script>
+
 <script>
   (function ($) {
     $.fn.clickToggle = function (func1, func2) {
@@ -489,16 +631,157 @@
   }(jQuery));
 
   $(function () {
+    var slides = $('.slider');
+    slides.unslider(
+        {
+          speed: 500,               //  The speed to animate each slide (in milliseconds)
+          delay: 2000,              //  The delay between slide animations (in milliseconds)
+          complete: function() {},  //  A function that gets called after every slide animation
+          keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+          dots: true,               //  Display dot navigation
+          fluid: true
+        }
+    );
+
     var $main = $('#js-main');
     $('#js-toggle').clickToggle(function () {
       $main.addClass('menu-out');
-    }, function () {
+    }, function() {
       $main.removeClass('menu-out');
     });
 
-    $(window).resize(function () {
+    $(window ).resize(function() {
       $main.removeClass('menu-out');
     });
+
+    var game_time = 1409673600;
+    var $carouselLinks = $('.carousel-links li'),
+        $carouselContent = $('.carousel-content');
+
+    $carouselLinks.each(function (index, item) {
+      $(item).hover(CarouselHandler);
+    });
+
+    function CarouselHandler() {
+      $carouselContent.css('top', 0);
+      $carouselLinks.removeClass('active');
+
+      $carouselLinks.css('height', 50);
+      $(this).addClass('active');
+
+
+      if ($('html').hasClass('ie7')) {
+        $(this).css('height', 80);
+      } else {
+        $(this).css('height', 91);
+      }
+
+      var index = $(this).index(),
+          topOffset = parseInt(index * 300);
+console.log(topOffset);
+      $carouselContent.css('top', -topOffset);
+    };
+
+    // 顶部导航
+    $('#menu .main-nav-item').hover(function () {
+      $(this).find('.sub-nav').slideDown('fast');
+    }, function () {
+      $(this).find('.sub-nav').slideUp('fast');
+    });
+
+    //视频播放
+    var $videoImgs = $('.js-video-img'),
+        $players = $('.js-player'),
+        $videoDiv = $('#js-video'),
+        $videoEmbed = $('#js-video-embed'),
+        $videoTitle = $('#js-video-title');
+
+    var videoTitles = [
+      '阿贾克斯本赛季十大进球',
+      '阿贾克斯连续四年夺得荷甲冠军',
+      '阿贾克斯2-1尼美根完美收官'
+    ];
+    $videoImgs.click(function() {
+      $videoImgs.removeClass('active');
+      $(this).addClass('active')
+      $players.removeClass('active');
+      $($players[$(this).index()]).addClass('active');
+      $videoTitle.html(videoTitles[$(this).index()]);
+    });
+
+    //倒计时
+    var o = {
+      day: $('#js-day'),
+      hour: $('#js-hour'),
+      mini: $('#js-minute'),
+      sec: $('#js-second')
+    };
+
+    fnTimeCountDown(Number(game_time)*1000, o);
+
+    function fnTimeCountDown(d, o){
+      var f = {
+        zero: function(n){
+          var n = parseInt(n, 10);
+          if(n > 0){
+            if(n <= 9){
+              n = "0" + n;
+            }
+            return String(n);
+          }else{
+            return "00";
+          }
+        },
+        dv: function(){
+          d = d || Date.UTC(2050, 0, 1); //如果未定义时间，则我们设定倒计时日期是2050年1月1日
+          var future = new Date(d), now = new Date();
+          //现在将来秒差值
+          var dur = Math.round((future.getTime() - now.getTime()) / 1000),
+              pms = {
+                sec: "00",
+                mini: "00",
+                hour: "00",
+                day: "00",
+                month: "00",
+                year: "0"
+              };
+          if(dur > 0){
+            pms.sec = f.zero(dur % 60);
+            pms.mini = Math.floor((dur / 60)) > 0? f.zero(Math.floor((dur / 60)) % 60) : "00";
+            pms.hour = Math.floor((dur / 3600)) > 0? f.zero(Math.floor((dur / 3600)) % 24) : "00";
+            pms.day = Math.floor((dur / 86400)) > 0? f.zero(Math.floor(dur / 86400)) : "00";
+            //月份，以实际平均每月秒数计算
+            pms.month = Math.floor((dur / 2629744)) > 0? f.zero(Math.floor((dur / 2629744)) % 12) : "00";
+            //年份，按按回归年365天5时48分46秒算
+            pms.year = Math.floor((dur / 31556926)) > 0? Math.floor((dur / 31556926)) : "0";
+          }
+          return pms;
+        },
+        ui: function(){
+          if(o.sec){
+            o.sec.html(f.dv().sec);
+          }
+          if(o.mini){
+            o.mini.html(f.dv().mini);
+          }
+          if(o.hour){
+            o.hour.html(f.dv().hour);
+          }
+          if(o.day){
+            o.day.html(f.dv().day);
+          }
+          if(o.month){
+            o.month.html(f.dv().month);
+          }
+          if(o.year){
+            o.year.html(f.dv().year);
+          }
+          setTimeout(f.ui, 1000);
+        }
+      };
+      f.ui();
+    };
+
   });
 
 </script>
