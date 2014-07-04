@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <title>阿贾克斯</title>
   <link rel="stylesheet" href="styles/ajax.css"/>
-  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
+  <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.css"/>
   <style>
     .side-nav p {
       margin-top: 45%;
@@ -339,6 +339,17 @@
     <h2 class="title">下一场比赛</h2>
 
     <div class="next-vs clearfix">
+
+      <div class="left pull-left">
+        <img class="img-vs1" src="../images/ajax/vs1.png" width="65" height="65">
+        <span class="text-vs">VS</span>
+        <img class="img-vs2" src="../images/ajax/vs2.png" width="57" height="56">
+
+        <p class="desc">
+          <span>2014-8-3&nbsp;&nbsp;24:00</span>&nbsp;
+          克鲁伊夫盾沃兹勒&nbsp;&nbsp;VS &nbsp;&nbsp;阿贾克斯
+        </p>
+      </div>
       <div class="right pull-right">
         <img src="../images/ajax/report_right.png" width="64" height="34">
 
@@ -363,16 +374,6 @@
           </div>
         </div>
 
-      </div>
-      <div class="left pull-left">
-        <img class="img-vs1" src="../images/ajax/vs1.png" width="65" height="65">
-        <span class="text-vs">VS</span>
-        <img class="img-vs2" src="../images/ajax/vs2.png" width="57" height="56">
-
-        <p class="desc">
-          <span>2014-8-3&nbsp;&nbsp;24:00</span>&nbsp;
-          克鲁伊夫盾沃兹勒&nbsp;&nbsp;VS &nbsp;&nbsp;阿贾克斯
-        </p>
       </div>
     </div>
     <div class="text-center">
@@ -595,9 +596,19 @@
 
 <div class="card ajax-ads pull-left">
   <div class="card-inner">
-
+    <div class="ajax-ids-item pull-left">
+      <img src="images/ajax/adidas.jpg">
+    </div>
+    <div class="ajax-ids-item pull-left">
+      <img src="images/ajax/nike.jpg">
+    </div>
+    <div class="ajax-ids-item pull-left">
+      <img src="images/ajax/muji.jpg">
+    </div>
+    <div class="ajax-ids-item pull-left">
+      <img src="images/ajax/apple.png" style="background-color: #fff;">
+    </div>
   </div>
-
 </div>
 <div class="card weibo pull-left">
   <div class="card-inner">
@@ -611,7 +622,7 @@
 
 </div>
 </body>
-<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="scripts/jquery.min.js"></script>
 <script src="scripts/jquery.event.swipe.js"></script>
 <script src="scripts/unslider.min.js"></script>
 
@@ -643,6 +654,7 @@
         }
     );
 
+    //侧边导航
     var $main = $('#js-main');
     $('#js-toggle').clickToggle(function () {
       $main.addClass('menu-out');
@@ -678,7 +690,6 @@
 
       var index = $(this).index(),
           topOffset = parseInt(index * 300);
-console.log(topOffset);
       $carouselContent.css('top', -topOffset);
     };
 
