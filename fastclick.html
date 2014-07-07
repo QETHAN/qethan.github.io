@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>支付超时</title>
+  <style>
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    body {
+      line-height: 1.5;
+      font-size: 14px;
+      background-color: #f1f1f1;
+    }
+    a {
+      text-decoration: none;
+    }
+    header {
+      height: 46px;
+      line-height: 46px;
+      background-color: #ae1825;
+      text-align: center;
+    }
+    header img {
+      margin-top: 7px;
+    }
+
+    section {
+      padding: 49px 12px 0;
+      text-align: center;
+    }
+
+    .message {
+      margin-bottom: 67px;
+      padding: 12px 0 6px 0;
+      font-size: 15px;
+      color: #808080;
+    }
+
+
+    .btn {
+      display: block;
+      width: 86%;
+      padding: 15px 0;
+      margin: 0 auto;
+      font-size: 15px;
+      color: #fff;
+      text-align: center;
+      background-color: #ac1622;
+      border-radius: 12px;
+    }
+    footer {
+      position: absolute;
+      bottom: 45px;
+      margin-bottom: 15px;
+      padding: 0 12px;
+      font-size: 12px;
+      color: #808080;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" height="32" alt="虎扑看球彩票支付">
+  </header>
+  <section>
+    <h1>
+      <img src="images/warning.jpg" height="81">
+      <p class="message">支付超时未完成</p>
+    </h1>
+    <a class="btn" href="http://www.baidu.com" title="返回虎扑看球">返回虎扑看球</a>
+  </section>
+  <script src="js/fastclick.min.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      FastClick.attach(document.body);
+    }, false);
+  </script>
+</body>
+</html>
