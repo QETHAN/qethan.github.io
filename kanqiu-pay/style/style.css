@@ -16,6 +16,7 @@ footer {
 }
 html,
 body {
+  position: relative;
   height: 100%;
   -webkit-text-size-adjust:none;
 }
@@ -53,12 +54,6 @@ section.fail {
   text-align: center;
 }
 
-.message {
-  margin-bottom: 67px;
-  padding: 12px 0 6px 0;
-  font-size: 15px;
-  color: #808080;
-}
 h1 {
   line-height: 1;
   margin: 12px 0;
@@ -67,7 +62,13 @@ h1 {
   text-align: center;
 }
 h1.warning {
-  margin-top: 50px;
+  margin-top: 15px;
+}
+.message {
+  margin-bottom: 30px;
+  padding: 12px 0 6px 0;
+  font-size: 15px;
+  color: #808080;
 }
 .question {
   color: #444;
