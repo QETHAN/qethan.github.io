@@ -31,7 +31,7 @@ header {
 }
 header .title {
   line-height: 1;
-  padding-top: 5px;
+  padding-top: 7px;
   margin-bottom: 2px;
   font-size: 18px;
   font-weight: bold;
@@ -70,7 +70,7 @@ h1.warning {
   color: #444;
 }
 .guess {
-  padding: 20px 0 6px 0;
+  padding-top: 10px;
   color: #808080;
   font-size: 15px;
 }
@@ -105,7 +105,7 @@ h1.warning {
 footer {
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom: 6px;
   width: 100%;
   padding: 0 12px;
   font-size: 12px;
