@@ -4,6 +4,9 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5 ease;
+  transition: all 0.5 ease;
   margin: 0;
   padding: 0;
 }
