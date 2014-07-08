@@ -26,7 +26,6 @@ a {
 header {
   height: 46px;
   color: #fff;
-  font-weight: bold;
   background-color: #ae1825;
   text-align: center;
 }
@@ -35,6 +34,7 @@ header .title {
   padding-top: 5px;
   margin-bottom: 2px;
   font-size: 18px;
+  font-weight: bold;
 }
 header .sub-title {
   line-height: 1;
