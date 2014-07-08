@@ -1,0 +1,117 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+section,
+footer {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  background-color: #f1f1f1;
+}
+a {
+  text-decoration: none;
+}
+header {
+  height: 46px;
+  line-height: 46px;
+  background-color: #ae1825;
+  text-align: center;
+}
+header img {
+  margin-top: 7px;
+}
+
+section {
+  padding: 0 12px 0;
+}
+section.timeout,
+section.fail {
+  padding: 49px 12px 0;
+  text-align: center;
+}
+
+.message {
+  margin-bottom: 67px;
+  padding: 12px 0 6px 0;
+  font-size: 15px;
+  color: #808080;
+}
+h1 {
+  line-height: 1;
+  margin: 12px 0;
+  font-size: 18px;
+  color: #111;
+  text-align: center;
+}
+h1.warning {
+  margin-top: 50px;
+}
+.question {
+  color: #444;
+}
+.guess {
+  padding: 20px 0 6px 0;
+  color: #808080;
+  font-size: 15px;
+}
+.num {
+  color: #ff0000;
+  font-size: 16px;
+}
+.bg-divider {
+  line-height: 1;
+}
+.total {
+  padding: 10px 0 10px 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: #111;
+  text-align: center;
+}
+.btn {
+  display: block;
+  width: 86%;
+  padding: 10px 0;
+  margin: 0 auto;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  background-color: #ac1622;
+  border-radius: 12px;
+}
+.btn:hover {
+  background-color: #780f18;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  padding: 0 12px;
+  font-size: 12px;
+  color: #808080;
+  text-align: center;
+}
+@media screen and (orientation:landscape) {
+  h1.warning {
+    margin-top: 20px;
+  }
+  .warning p {
+    margin-bottom: 34px;
+  }
+  footer {
+    position: relative;
+    margin: 50px 0 15px 0;
+  }
+}
