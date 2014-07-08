@@ -153,6 +153,7 @@ body {
 }
 
 .wrapper {
+  padding-bottom: 100px;
   background: url(../images/ajax/bg.jpg);
 }
 
@@ -295,11 +296,12 @@ body {
 }
 
 .side-nav {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   left: 0;
   top: 0;
   width: 70%;
+  height: 100%;
 }
 .side-nav .main-nav .main-nav-item {
   width: 100% !important;
