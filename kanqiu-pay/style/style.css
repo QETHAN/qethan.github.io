@@ -24,6 +24,9 @@ body {
 a {
   text-decoration: none;
 }
+i {
+  font-style: normal;
+}
 header {
   height: 46px;
   color: #fff;
