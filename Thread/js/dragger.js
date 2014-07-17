@@ -183,9 +183,7 @@
 
             if (typeof coords.canDragDown === 'undefined') {
                 coords.canDragDown = options.disableDragDown !== true && startY < stopY && startScrollY <= 0;
-                if(this.options.downToggle == "off") {
-                    coords.canDragDown = false;
-                }
+
             }
             if (typeof coords.canDragUp === 'undefined') {
                 coords.canDragUp = options.disableDragUp !== true && startY > stopY && startScrollY + innerHeight >= ctHeight;
